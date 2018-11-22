@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p><a href="/my">Home</a> || <a href="/">About Us</a></p>
+
+    <ul>
+        <% for (var i = 0; i < fileList.length; i++) { %>
+          <li> 
+            <%= fileList[i] %>
+          </li>
+          <% } %>
+     
+    </ul>
+  </body>
+</html>

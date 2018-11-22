@@ -23,5 +23,5 @@ Install nodemon globally
  >> nodemon start
  
  ```
- P.S: Very First Commit, Long way to go! Keep Calm, and pull.
+ P.S: Very First Commit, Long way to go! Keep Calm, and stay tuned.
  ```

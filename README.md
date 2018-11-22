@@ -22,6 +22,10 @@ Install nodemon globally
  >> cd app-name </br>
  >> nodemon start
  
+ > API
+ 1. localhost:3000/?path="folder/path" </br>
+path is an optional parameter.
+
  ```
  P.S: Very First Commit, Long way to go! Keep Calm, and stay tuned.
  ```

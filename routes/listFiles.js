@@ -24,8 +24,9 @@ const fs = require('fs');
          },
          folderReaderSync : function (folderPath) {
             var listOfFiles = [];
-           //joining path of directory 
-           const directoryPath = folderPath;//path.join(__dirname, 'Documents');
+            console.log(folderPath);
+           //joining path of directory
+           const directoryPath = folderPath == "" ?"/home/siddharthdwivedi/Documents":folderPath;//path.join(__dirname, 'Documents');
            //passsing directoryPath and callback function
            var filesList=fs.readdirSync(directoryPath);
            //listing all files using forEach

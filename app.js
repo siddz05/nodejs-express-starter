@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', [path.join(__dirname, 'views'),path.join(__dirname, 'static-files')]);
+app.set('views', [path.join(__dirname, 'views'),path.join(__dirname, 'static-files'),path.join(__dirname, 'hyperspace')]);
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -24,6 +24,8 @@ app.use('/users', usersRouter);
 
 // this will serve all the static files in the public directory,eg:  /static/image/image-name.png
 app.use('/static',express.static('public'))
+//to serve all the static files from inside the hyperspace folder
+app.use(express.static('hyperspace/'))
 
 //import local modules
 var myFolder = require('./routes/listFiles.js');

@@ -28,4 +28,9 @@ router.get('/', function (req, res) {
   res.render('index1', { title: 'Sid' , fileList:result});
 })
 
+// get the new homepage
+router.get('/v2', function(req, res, next) {
+  res.render('indexV2', { title: 'Sid' });
+});
+
 module.exports = router;

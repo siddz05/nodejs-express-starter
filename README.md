@@ -26,6 +26,9 @@ Install nodemon globally
  1. localhost:3000/?path="folder/path" </br>
 path is an optional parameter.
 
+2. localhost:3000/v2
+It, serves the dynamic html5 theme.
+
  ```
  P.S: Very First Commit, Long way to go! Keep Calm, and stay tuned.
  ```
